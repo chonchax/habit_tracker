@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Habit to make today !</h1>
+      <div id="today-habits" class="habits">
+        <p>Loading...</p>
+      </div>
+    </div>
+
+    <div id="button">
+      <button id="add-new-habit">Add new habit</button>
+      <button id="delete-habit">Delete habit</button>
+      <button id="open-history">See history</button>
+
+      <dialog class="dialog" id="add-habit-dialog">
+        <div class="dialog-content">
+          <h2>Add a new habits !</h2>
+          <form id="add-habit-form">
+            <input type="text" name="title" placeholder="Habit" />
+            <button type="Submit">Add</button>
+          </form>
+
+          <form method="dialog">
+            <button type="submit" class="close-button">X</button>
+          </form>
+        </div>
+      </dialog>
+
+      <dialog class="dialog" id="delete-habit-dialog">
+        <div class="dialog-content">
+          <h2>Delete an habit!</h2>
+          <form id="delete-habit-form">
+            <select name="habit" id="habit-select">
+              <option value="">Select an habit</option>
+            </select>
+            <button type="submit">Delete</button>
+          </form>
+
+          <form method="dialog">
+            <button type="submit" class="close-button">X</button>
+          </form>
+        </div>
+      </dialog>
+
+      <dialog class="dialog" id="habits-history-dialog">
+        <div class="dialog-content">
+          <h2>Habits history</h2>
+          <div id="table-wrapper"></div>
+          <form method="dialog">
+            <button type="submit" class="close-button">X</button>
+          </form>
+        </div>
+      </dialog>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

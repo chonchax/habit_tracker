@@ -1,0 +1,34 @@
+{
+  "habits": [
+    {
+      "id": 1,
+      "title": "Work 4 hours",
+      "daysDone": {
+        "2024-07-23": true,
+        "2024-07-24": true,
+        "2024-07-25": true,
+        "2024-07-26": true
+      }
+    },
+    {
+      "id": 2,
+      "title": "Go to sport",
+      "daysDone": {
+        "2024-07-23": true,
+        "2024-07-24": true,
+        "2024-07-25": true,
+        "2024-07-26": false
+      }
+    },
+    {
+      "id": 3,
+      "title": "Calin Bébé",
+      "daysDone": {
+        "2024-07-23": true,
+        "2024-07-24": true,
+        "2024-07-25": true,
+        "2024-07-26": false
+      }
+    }
+  ]
+}
