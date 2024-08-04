@@ -45,7 +45,7 @@ export class HabitHistoryDialog {
 
   async render() {
     const habits = await getAllHabits();
-    const firstDate = getAllDate(habits, 70);
+    const firstDate = getAllDate(habits, 17);
     const today = new Date();
     const days = getDaysBetween(firstDate[0], today);
     const table = document.createElement("table");
